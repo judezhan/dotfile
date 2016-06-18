@@ -11,6 +11,9 @@ Plug 'junegunn/vim-easy-align'
 " Any valid git URL is allowed
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 
+" CtrlP
+Plug 'https://github.com/kien/ctrlp.vim'
+
 " Group dependencies, vim-snippets depends on ultisnips
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
@@ -23,9 +26,6 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 
 " Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
-
-" Plugin outside ~/.vim/plugged with post-update hook
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -40,7 +40,7 @@ map <leader>n :NERDTreeToggle<CR>
 nmap <leader>a <Esc>:Ack!
 
 " Run command-t file search
-map <leader>f :FZF<CR>
+map <leader>f :CtrlP<CR>
 
 fu! SplitScroll()
     :wincmd v
@@ -186,3 +186,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
+set wildignore+=*.png,*.css,*.js,*/data_static/*
