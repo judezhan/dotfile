@@ -27,6 +27,9 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 " Plugin options
 Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
+" Fugitive
+Plug 'https://github.com/tpope/vim-fugitive.git'
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -132,7 +135,7 @@ set report=0                " : commands always print changed line count.
 set shortmess+=a            " Use [+]/[RO]/[w] for modified/readonly/written.
 set ruler                   " Show some info, even without statuslines.
 set laststatus=2            " Always show statusline, even if only 1 window.
-"set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
+set statusline=[%l,%v\ %P%M]\ %f\ %r%h%w\ (%{&ff})\ %{fugitive#statusline()}
 
 " displays tabs with :set list & displays when a line runs off-screen
 " set listchars=tab:>-,eol:$,trail:-,precedes:<,extends:>
@@ -192,4 +195,4 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
-set wildignore+=*.png,*.css,*.js,*/data_static/*
+set wildignore+=*.png,*.jpg,*/data_static/*
