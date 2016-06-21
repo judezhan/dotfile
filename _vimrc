@@ -38,6 +38,7 @@ let mapleader=","             " change the leader to be a comma vs slash
 
 " Open NerdTree
 map <leader>n :NERDTreeToggle<CR>
+let NERDTreeIgnore=['\.pyc$']
 
 " Ack searching
 nmap <leader>a <Esc>:Ack!
