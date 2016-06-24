@@ -30,6 +30,9 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 " Fugitive
 Plug 'https://github.com/tpope/vim-fugitive.git'
 
+" ACK
+Plug 'https://github.com/mileszs/ack.vim'
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -188,7 +191,7 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 " CtrlP
