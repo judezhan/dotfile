@@ -33,6 +33,9 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 " ACK
 Plug 'https://github.com/mileszs/ack.vim'
 
+" Thrift
+Plug 'https://github.com/solarnz/thrift.vim'
+
 " Add plugins to &runtimepath
 call plug#end()
 
