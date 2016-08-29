@@ -1,0 +1,4 @@
+--python
+--color
+--ignore-dir=htmlcov
+--ignore-dir=.venv
