@@ -1,5 +1,7 @@
 . ~/.config/fish/aliases.fish
 
+set fish_greeting
+
 set fish_git_dirty_color red
 set fish_git_not_dirty_color yellow
 
