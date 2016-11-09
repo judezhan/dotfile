@@ -1,3 +1,5 @@
+set shell=/bin/bash
+
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
@@ -35,6 +37,12 @@ Plug 'https://github.com/mileszs/ack.vim'
 
 " Thrift
 Plug 'https://github.com/solarnz/thrift.vim'
+
+" ES6
+Plug 'https://github.com/isRuslan/vim-es6'
+
+" Golang
+Plug 'fatih/vim-go'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -203,3 +211,5 @@ let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
 set wildignore+=*.png,*.jpg,*/data_static/*
+
+set foldlevel=0
