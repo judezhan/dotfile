@@ -158,14 +158,14 @@ set incsearch               " Incrementally search while typing a /regex
 
 """" Display
 if has("gui_running")
-    colorscheme macvim
+    colorscheme industry
     " Remove menu bar
     set guioptions-=m
 
     " Remove toolbar
     set guioptions-=T
 else
-    colorscheme macvim
+    colorscheme industry
 endif
 
 " Paste from clipboard
