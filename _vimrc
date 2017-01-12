@@ -1,12 +1,10 @@
-set shell=/bin/bash
-
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 "
 Plug 'Valloric/YouCompleteMe'
 Plug 'taglist.vim'
-Plug 'https://github.com/scrooloose/syntastic.git'
+" Plug 'https://github.com/scrooloose/syntastic.git'
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
 
@@ -37,12 +35,6 @@ Plug 'https://github.com/mileszs/ack.vim'
 
 " Thrift
 Plug 'https://github.com/solarnz/thrift.vim'
-
-" ES6
-Plug 'https://github.com/isRuslan/vim-es6'
-
-" Golang
-Plug 'fatih/vim-go'
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -166,14 +158,14 @@ set incsearch               " Incrementally search while typing a /regex
 
 """" Display
 if has("gui_running")
-    colorscheme desert
+    colorscheme macvim
     " Remove menu bar
     set guioptions-=m
 
     " Remove toolbar
     set guioptions-=T
 else
-    colorscheme desert
+    colorscheme macvim
 endif
 
 " Paste from clipboard
@@ -196,14 +188,15 @@ let Tlist_WinWidth = 50
 nnoremap <leader>l :Tlist<CR>
 
 " Syntasic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" 
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_check_on_w = 0
 
 " CtrlP
 let g:ctrlp_map = '<c-p>'
