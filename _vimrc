@@ -3,7 +3,8 @@ call plug#begin('~/.vim/plugged')
 " Make sure you use single quotes
 "
 Plug 'Valloric/YouCompleteMe'
-Plug 'taglist.vim'
+" Plug 'taglist.vim'
+Plug 'https://github.com/vim-scripts/taglist.vim.git'
 " Plug 'https://github.com/scrooloose/syntastic.git'
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
