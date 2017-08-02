@@ -207,3 +207,7 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:20,results:20'
 set wildignore+=*.png,*.jpg,*/data_static/*
 
 set foldlevel=0
+
+" YCM
+let g:ycm_global_ycm_extra_conf = '/Users/judezhan/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_goto_buffer_command = 'horizontal-split'
