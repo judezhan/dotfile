@@ -418,7 +418,7 @@ call s:X("Comment","888888","","italic","Grey","")
 call s:X("Todo","c7c7c7","","bold","White",s:termBlack)
 
 call s:X("StatusLine","000000","dddddd","italic","","White")
-call s:X("StatusLineNC","ffffff","403c41","italic","White","Black")
+call s:X("StatusLineNC","000000","888899","italic","White","Black") "未选中的Tab
 call s:X("VertSplit","777777","403c41","",s:termBlack,s:termBlack)
 call s:X("WildMenu","f0a0c0","302028","","Magenta","")
 
@@ -609,7 +609,7 @@ call s:X("PreciseJumpTarget","B9ED67","405026","","White","Green")
 
 " Manual overrides for 256-color terminals. Dark colors auto-map badly.
 if !s:low_color
-  hi StatusLineNC ctermbg=235
+"  hi StatusLineNC ctermbg=235
   hi Folded ctermbg=236
   hi DiffText ctermfg=81
   hi DbgBreakPt ctermbg=53
