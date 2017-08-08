@@ -37,6 +37,9 @@ Plug 'https://github.com/mileszs/ack.vim'
 " Thrift
 Plug 'https://github.com/solarnz/thrift.vim'
 
+" Tagbar
+Plug 'https://github.com/majutsushi/tagbar'
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -159,14 +162,14 @@ set incsearch               " Incrementally search while typing a /regex
 
 """" Display
 if has("gui_running")
-    colorscheme industry
+    colorscheme jellybeans
     " Remove menu bar
     set guioptions-=m
 
     " Remove toolbar
     set guioptions-=T
 else
-    colorscheme industry
+    colorscheme jellybeans
 endif
 
 " Paste from clipboard
@@ -184,9 +187,12 @@ nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
 nnoremap <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " Taglist
-let Tlist_Use_Right_Window = 1
-let Tlist_WinWidth = 50
-nnoremap <leader>l :Tlist<CR>
+" let Tlist_Use_Right_Window = 1
+" let Tlist_WinWidth = 50
+" nnoremap <leader>l :Tlist<CR>
+
+" Tagbar
+nnoremap <leader>l :TagbarToggle<CR>
 
 " Syntasic
 " set statusline+=%#warningmsg#
@@ -209,5 +215,5 @@ set wildignore+=*.png,*.jpg,*/data_static/*
 set foldlevel=0
 
 " YCM
-let g:ycm_global_ycm_extra_conf = '/Users/judezhan/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '/Users/judez/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_goto_buffer_command = 'horizontal-split'
