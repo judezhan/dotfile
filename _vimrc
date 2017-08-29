@@ -40,6 +40,8 @@ Plug 'https://github.com/solarnz/thrift.vim'
 " Tagbar
 Plug 'https://github.com/majutsushi/tagbar'
 
+Plug 'https://github.com/vim-utils/vim-man'
+
 " Add plugins to &runtimepath
 call plug#end()
 
@@ -217,3 +219,7 @@ set foldlevel=0
 " YCM
 let g:ycm_global_ycm_extra_conf = '/Users/judez/.vim/plugged/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_goto_buffer_command = 'horizontal-split'
+
+" Vim-man
+map <leader>k <Plug>(man)
+map <leader>v <Plug>(Vman)
